@@ -1,24 +1,24 @@
 :root {
-  --bg: #f7f6f2;
+  --bg: #f5f7fa;
   --surface: #ffffff;
-  --text: #1f2328;
-  --muted: #5f6670;
-  --line: #e3e1da;
-  --accent: #1f6f5c;
-  --accent-soft: #e2f0eb;
+  --text: #1c2430;
+  --muted: #5b6676;
+  --line: #dde3eb;
+  --accent: #1d5fbf;
+  --accent-soft: #e3edfb;
   --radius: 12px;
   --max: 960px;
   font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
 }
 
 :root[data-theme="dark"] {
-  --bg: #15181c;
-  --surface: #1d2126;
-  --text: #e6e8eb;
-  --muted: #9aa3ad;
-  --line: #2d333a;
-  --accent: #5cc4a6;
-  --accent-soft: #1d3a32;
+  --bg: #121722;
+  --surface: #1a212d;
+  --text: #e5e9f0;
+  --muted: #98a3b3;
+  --line: #2a3342;
+  --accent: #6ea8fe;
+  --accent-soft: #1b2d4a;
 }
 
 * { box-sizing: border-box; }
