@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>王小明｜個人履歷</title>
+  <meta name="description" content="王小明的個人履歷網站雛形">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="主選單">
+      <a class="brand" href="index.html">王小明</a>
+      <ul class="nav-links">
+        <li><a href="index.html">關於我</a></li>
+        <li><a href="resume.html">履歷</a></li>
+        <li><a href="projects.html">作品與聯絡</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="切換主題">☾</button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="avatar" aria-hidden="true">王</div>
+      <div>
+        <h1>你好，我是王小明</h1>
+        <p class="role">前端工程師・台北</p>
+        <p>我有 5 年網頁開發經驗。我喜歡把複雜的需求做成簡單、好用的介面，也重視無障礙設計與效能。</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="resume.html">看我的履歷</a>
+          <a class="btn btn-ghost" href="projects.html#contact">聯絡我</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">重點數字</h2>
+      <div class="stats">
+        <div class="card stat"><strong>5+</strong><span>年工作經驗</span></div>
+        <div class="card stat"><strong>20+</strong><span>上線專案</span></div>
+        <div class="card stat"><strong>3</strong><span>開源專案</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">我能做什麼</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>網頁前端</h3>
+          <p>用 HTML、CSS、JavaScript 與現代框架，做出快速又穩定的網站。</p>
+        </div>
+        <div class="card">
+          <h3>介面設計</h3>
+          <p>從線框圖到設計系統，讓產品外觀一致、容易使用。</p>
+        </div>
+        <div class="card">
+          <h3>團隊合作</h3>
+          <p>與設計師、後端工程師緊密合作，用敏捷流程準時交付。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 王小明・本網站為雛形，內容皆為範例</p>
+  </footer>
+</body>
+</html>

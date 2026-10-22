@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作品與聯絡｜王小明</title>
+  <meta name="description" content="王小明的作品集與聯絡方式">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="主選單">
+      <a class="brand" href="index.html">王小明</a>
+      <ul class="nav-links">
+        <li><a href="index.html">關於我</a></li>
+        <li><a href="resume.html">履歷</a></li>
+        <li><a href="projects.html">作品與聯絡</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="切換主題">☾</button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>作品集</h1>
+
+    <div class="filters" role="group" aria-label="依類別篩選作品">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">全部</button>
+      <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">網站</button>
+      <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">應用程式</button>
+      <button class="filter-btn" type="button" data-filter="design" aria-pressed="false">設計</button>
+    </div>
+
+    <div class="grid">
+      <article class="card project" data-tags="web">
+        <h3>電商網站改版</h3>
+        <p>重新設計購物流程，結帳轉換率提升 18%。</p>
+        <ul class="tags"><li>網站</li><li>React</li></ul>
+      </article>
+      <article class="card project" data-tags="app">
+        <h3>記帳小幫手</h3>
+        <p>可離線使用的 PWA，支援圖表與匯出 CSV。</p>
+        <ul class="tags"><li>應用程式</li><li>PWA</li></ul>
+      </article>
+      <article class="card project" data-tags="design">
+        <h3>設計系統</h3>
+        <p>40 個以上的共用元件，附完整使用文件。</p>
+        <ul class="tags"><li>設計</li><li>Figma</li></ul>
+      </article>
+      <article class="card project" data-tags="web design">
+        <h3>咖啡店形象網站</h3>
+        <p>從品牌視覺到上線，一個人完成全部工作。</p>
+        <ul class="tags"><li>網站</li><li>設計</li></ul>
+      </article>
+    </div>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">聯絡我</h2>
+      <div class="grid">
+        <div class="card">
+          <p>Email：<a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p>GitHub：<a href="https://github.com/">github.com/your-name</a></p>
+          <p>LinkedIn：<a href="https://www.linkedin.com/">linkedin.com/in/your-name</a></p>
+        </div>
+        <form class="card form" id="contact-form">
+          <label>姓名<input name="name" type="text" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label>訊息<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">送出</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 王小明・本網站為雛形，內容皆為範例</p>
+  </footer>
+</body>
+</html>
